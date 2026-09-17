@@ -12,6 +12,8 @@ kshootmania/App/assets/font/LICENSE-KSM-SC-Medium.txt	assets/font/LICENSE-KSM-SC
 kshootmania/App/assets/font/LICENSE-KSM-TC-Medium.txt	assets/font/LICENSE-KSM-TC-Medium.txt
 kshootmania/App/bass.dll	bass.dll
 kshootmania/App/bass_fx.dll	bass_fx.dll
+kshootmania/App/bassasio.dll	bassasio.dll
+kshootmania/App/bassmix.dll	bassmix.dll
 kshootmania/App/dll/soundtouch/COPYING.TXT	dll/soundtouch/COPYING.TXT
 kshootmania/App/dll/soundtouch/SoundTouch_x64.dll	dll/soundtouch/SoundTouch_x64.dll
 kshootmania/App/engine/font/min/LICENSE	engine/font/min/LICENSE

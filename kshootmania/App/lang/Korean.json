@@ -81,6 +81,7 @@
 		"MasterVolumePercent": "%",
 		"AudioBackendDefault": "기본값 (WASAPI 우선)",
 		"AudioBackendDirectSound": "DirectSound",
+		"AudioBackendASIO": "ASIO",
 		"VsyncOffWithFps": "OFF ({0}fps)",
 		"VsyncOn": "ON",
 		"JudgmentOn": "ON (표시/판정)",

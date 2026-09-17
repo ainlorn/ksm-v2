@@ -81,6 +81,7 @@
 		"MasterVolumePercent": "%",
 		"AudioBackendDefault": "預設 (WASAPI 優先)",
 		"AudioBackendDirectSound": "DirectSound",
+		"AudioBackendASIO": "ASIO",
 		"VsyncOffWithFps": "關 ({0}fps)",
 		"VsyncOn": "開",
 		"JudgmentOn": "判定開",

@@ -60,6 +60,24 @@ BASS is free for non-commercial use.
 If you are using BASS in a commercial product, you must obtain a license.
 
 ====================
+BASSASIO
+====================
+Copyright (c) 2005-2026 Un4seen Developments Ltd.
+https://www.un4seen.com/
+
+BASSASIO is free for non-commercial use.
+If you are using BASSASIO in a commercial product, you must obtain a license.
+
+====================
+BASSmix
+====================
+Copyright (c) 2005-2026 Un4seen Developments Ltd.
+https://www.un4seen.com/
+
+BASSmix is free for non-commercial use.
+If you are using BASSmix in a commercial product, you must obtain a license.
+
+====================
 BASS_FX
 ====================
 Copyright (c) 2002-2018 Arthur Aminov (JOBnik!)

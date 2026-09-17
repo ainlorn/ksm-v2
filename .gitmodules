@@ -12,7 +12,7 @@
 	url = https://github.com/kshootmania/ksmaxis.git
 [submodule "ksmaudio"]
 	path = ksmaudio
-	url = https://github.com/kshootmania/ksmaudio.git
+	url = https://github.com/ainlorn/ksmaudio.git
 [submodule "kshootmania/ThirdParty/SQLiteCpp"]
 	path = kshootmania/ThirdParty/SQLiteCpp
 	url = https://github.com/SRombauts/SQLiteCpp.git

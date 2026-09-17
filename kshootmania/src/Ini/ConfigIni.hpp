@@ -20,6 +20,8 @@ namespace ConfigIni
 		constexpr StringView kHideAllFolder = U"hide_itemall";
 		constexpr StringView kMasterVolume = U"mastervol";
 		constexpr StringView kAudioBackend = U"audio_backend";
+		constexpr StringView kAsioDevice = U"asio_device";
+		constexpr StringView kAsioBuffer = U"asio_buffer";
 		constexpr StringView kVsync = U"vsync";
 
 		// Option > Input / Judgment Settings
@@ -101,6 +103,7 @@ namespace ConfigIni
 		{
 			constexpr StringView kDefault = U"default";
 			constexpr StringView kDirectSound = U"direct_sound";
+			constexpr StringView kASIO = U"asio";
 		}
 
 		namespace TextureSize

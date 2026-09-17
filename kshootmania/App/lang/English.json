@@ -81,6 +81,7 @@
 		"MasterVolumePercent": "%",
 		"AudioBackendDefault": "Default (WASAPI preferred)",
 		"AudioBackendDirectSound": "DirectSound",
+		"AudioBackendASIO": "ASIO",
 		"VsyncOffWithFps": "Off ({0}fps)",
 		"VsyncOn": "On",
 		"JudgmentOn": "Judgement On",

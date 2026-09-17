@@ -354,7 +354,15 @@ void OutputLicenseTxt()
 ksmaudio::AudioBackend GetAudioBackendFromConfig()
 {
 	const StringView value = ConfigIni::GetString(ConfigIni::Key::kAudioBackend, ConfigIni::Value::AudioBackend::kDefault);
-	return value == ConfigIni::Value::AudioBackend::kDirectSound ? ksmaudio::AudioBackend::DirectSound : ksmaudio::AudioBackend::Default;
+	if (value == ConfigIni::Value::AudioBackend::kDirectSound)
+	{
+		return ksmaudio::AudioBackend::DirectSound;
+	}
+	if (value == ConfigIni::Value::AudioBackend::kASIO)
+	{
+		return ksmaudio::AudioBackend::ASIO;
+	}
+	return ksmaudio::AudioBackend::Default;
 }
 #endif
 
@@ -400,7 +408,13 @@ void KSMMain()
 
 	// 音声処理を初期化
 #ifdef _WIN32
-	const bool audioInitialized = ksmaudio::Init(s3d::Platform::Windows::Window::GetHWND(), GetAudioBackendFromConfig());
+	const int32 asioDeviceIndex = ConfigIni::GetInt(ConfigIni::Key::kAsioDevice, 0);
+	const int32 asioBufferSamples = ConfigIni::GetInt(ConfigIni::Key::kAsioBuffer, 0);
+	const bool audioInitialized = ksmaudio::Init(
+		s3d::Platform::Windows::Window::GetHWND(),
+		GetAudioBackendFromConfig(),
+		asioDeviceIndex,
+		asioBufferSamples >= 0 ? static_cast<DWORD>(asioBufferSamples) : 0);
 #else
 	const bool audioInitialized = ksmaudio::Init(nullptr);
 #endif

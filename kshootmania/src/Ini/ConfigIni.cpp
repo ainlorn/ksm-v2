@@ -173,6 +173,10 @@ rightclick_back=1
 
 mastervol=100
 
+audio_backend=default
+asio_device=0
+asio_buffer=0
+
 mouse_directionx=1
 mouse_directiony=1
 mouse_sensitivity=40
@@ -280,6 +284,18 @@ void ConfigIni::Load()
 		const StringView configValue = GetString(iniKey, defaultValue);
 		KeyConfig::SetConfigValueByCommaSeparated(targetConfigSet, configValue);
 	}
+
+#ifdef _WIN32
+	// ASIO詳細設定キーが無い場合はデフォルト値を書き込み対象に追加(次回Saveでconfig.iniへ出力)
+	if (!s_configIniData.hasValue(Key::kAsioDevice))
+	{
+		s_configIniData.setInt(Key::kAsioDevice, 0);
+	}
+	if (!s_configIniData.hasValue(Key::kAsioBuffer))
+	{
+		s_configIniData.setInt(Key::kAsioBuffer, 0);
+	}
+#endif
 }
 
 void ConfigIni::Save()

@@ -168,6 +168,7 @@ namespace I18n
 		MasterVolumePercent,
 		AudioBackendDefault,
 		AudioBackendDirectSound,
+		AudioBackendASIO,
 		VsyncOffWithFps,
 		VsyncOn,
 		JudgmentOn,

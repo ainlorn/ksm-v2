@@ -125,6 +125,7 @@ std::unique_ptr<std::array<OptionMenu, OptionScene::kOptionMenuTypeEnumCount>> O
 			CreateInfo::Enum(I18n::Get(I18n::Option::ItemAudioBackend), ConfigIni::Key::kAudioBackend, Array<StrPair>{
 				StrPair{ String{ ConfigIni::Value::AudioBackend::kDefault }, I18n::Get(I18n::Option::AudioBackendDefault) },
 				StrPair{ String{ ConfigIni::Value::AudioBackend::kDirectSound }, I18n::Get(I18n::Option::AudioBackendDirectSound) },
+				StrPair{ String{ ConfigIni::Value::AudioBackend::kASIO }, I18n::Get(I18n::Option::AudioBackendASIO) },
 			}),
 #endif
 			CreateInfo::Enum(I18n::Get(I18n::Option::ItemVsync), ConfigIni::Key::kVsync, Array<StrPair>{
